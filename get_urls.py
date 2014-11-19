@@ -20,6 +20,8 @@ for link in dom.xpath('//a/@href'):
 for i in range(len(links)):
 	links[i] = urljoin(original_url, links[i])
 
+links <- list(set(links))
+
 print "Found " + str(len(links)) + " links!"
 
 final_links = []
