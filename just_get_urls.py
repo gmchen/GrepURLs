@@ -1,3 +1,11 @@
+########################################################################################################
+#
+# Given a URL to a webpage with many links, print (absolute) URLs to linked pages
+#
+# Usage: python just_get_urls.py http://www.SampleSiteWithManyLinks.com
+#
+########################################################################################################
+
 import urllib2
 import lxml.html
 from urlparse import urljoin

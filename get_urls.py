@@ -1,3 +1,13 @@
+########################################################################################################
+#
+# Search the text of all URLs linked from a single webpage for a regex. Outputs
+# the URLs of webpages containing the given regex (case insensitive).
+# This has the same functionality as get_relevant_urls.sh, but is generally slower.
+#
+# Usage: python get_urls.py http://www.SampleSiteWithManyLinks.com "My Expression"
+#
+########################################################################################################
+
 import urllib2
 import lxml.html
 from urlparse import urljoin
