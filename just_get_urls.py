@@ -26,7 +26,7 @@ for link in dom.xpath('//a/@href'):
 for i in range(len(links)):
 	links[i] = urljoin(original_url, links[i])
 
-links <- list(set(links))
+links = list(set(links))
 
 for link in links:
 	print link
