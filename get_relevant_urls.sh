@@ -25,7 +25,7 @@ do
 	printf "$counter "
 	if `wget -O - "$url" 2> /dev/null | grep -i -q "$2"`
 	then
-		printf "Hit "
+		printf "\n$url\n"
 		urloutput="$urloutput$url\n"
 	fi
 	let counter=counter+1
